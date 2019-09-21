@@ -1,0 +1,39 @@
+ <http://mandrill.imaginecurve.com/track/click/30621710/www.curve.app?p=eyJzIjoib0MtaHllMmlwSG1VMU03eDRwYzNJVnlRNWpvIiwidiI6MSwicCI6IntcInVcIjozMDYyMTcxMCxcInZcIjoxLFwidXJsXCI6XCJodHRwczpcXFwvXFxcL3d3dy5jdXJ2ZS5hcHBcXFwvP3V0bV9zb3VyY2U9ZW1haWxyZWNlaXB0JnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPWRpcmVjdFwiLFwiaWRcIjpcIjNlZDljZDg1NWQxNjQ2Y2U5YmM5YjgxNWU0ODliZmVkXCIsXCJ1cmxfaWRzXCI6W1wiYTNjZjZkNGZjNTJmYTUzOTc4Nzk3ZmEwY2RkODM0YWE0YTI5MWExYlwiXX0ifQ>
+           = Email Receipt =
+
+     Hello Martynas, 
+ 
+ 
+ There's been an update to your transaction, below are the new details. 
+ 
+ You made a purchase at:        Amznmktplace   €11.25     06 August 2019
+08:10:05          On this card:             Martynas Mickevičius
+ Swedbank Debit
+ XXXX-8931
+        Receipt for the purchase (add it using the Curve App): 
+ 
+      This Transaction will appear on your bank statement as: 
+ AMZNMktplace amazon.co.uk GBR         Generated on 07 August 2019 07:19
+UTC
+<http://mandrill.imaginecurve.com/track/click/30621710/www.curve.app?p=eyJzIjoib0MtaHllMmlwSG1VMU03eDRwYzNJVnlRNWpvIiwidiI6MSwicCI6IntcInVcIjozMDYyMTcxMCxcInZcIjoxLFwidXJsXCI6XCJodHRwczpcXFwvXFxcL3d3dy5jdXJ2ZS5hcHBcXFwvP3V0bV9zb3VyY2U9ZW1haWxyZWNlaXB0JnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPWRpcmVjdFwiLFwiaWRcIjpcIjNlZDljZDg1NWQxNjQ2Y2U5YmM5YjgxNWU0ODliZmVkXCIsXCJ1cmxfaWRzXCI6W1wiYTNjZjZkNGZjNTJmYTUzOTc4Nzk3ZmEwY2RkODM0YWE0YTI5MWExYlwiXX0ifQ>
+<http://mandrill.imaginecurve.com/track/click/30621710/imaginecurve.onelink.me?p=eyJzIjoiOXEzSlgxZU5EMDRSTS02OUJWclc4cGNwZmJZIiwidiI6MSwicCI6IntcInVcIjozMDYyMTcxMCxcInZcIjoxLFwidXJsXCI6XCJodHRwczpcXFwvXFxcL2ltYWdpbmVjdXJ2ZS5vbmVsaW5rLm1lXFxcLzM5NzI5MTIwNzlcXFwvYzViOWQ3MTdcIixcImlkXCI6XCIzZWQ5Y2Q4NTVkMTY0NmNlOWJjOWI4MTVlNDg5YmZlZFwiLFwidXJsX2lkc1wiOltcImFjNDBlYWZlNTMxODE2NjY1OTI0YmU2M2U3Njk3YTUzZjI4M2FjMDlcIl19In0>
+<http://mandrill.imaginecurve.com/track/click/30621710/imaginecurve.onelink.me?p=eyJzIjoiOXEzSlgxZU5EMDRSTS02OUJWclc4cGNwZmJZIiwidiI6MSwicCI6IntcInVcIjozMDYyMTcxMCxcInZcIjoxLFwidXJsXCI6XCJodHRwczpcXFwvXFxcL2ltYWdpbmVjdXJ2ZS5vbmVsaW5rLm1lXFxcLzM5NzI5MTIwNzlcXFwvYzViOWQ3MTdcIixcImlkXCI6XCIzZWQ5Y2Q4NTVkMTY0NmNlOWJjOWI4MTVlNDg5YmZlZFwiLFwidXJsX2lkc1wiOltcImFjNDBlYWZlNTMxODE2NjY1OTI0YmU2M2U3Njk3YTUzZjI4M2FjMDlcIl19In0>           How to stop
+receiving Email Receipts
+<http://mandrill.imaginecurve.com/track/click/30621710/imaginecurve.zendesk.com?p=eyJzIjoiaExrNnZtNnN2bDhzdGRXVGtOaGZoV2Jkd3g0IiwidiI6MSwicCI6IntcInVcIjozMDYyMTcxMCxcInZcIjoxLFwidXJsXCI6XCJodHRwczpcXFwvXFxcL2ltYWdpbmVjdXJ2ZS56ZW5kZXNrLmNvbVxcXC9oY1xcXC9lbi1nYlxcXC9hcnRpY2xlc1xcXC8yMTQzNTcyMDVcIixcImlkXCI6XCIzZWQ5Y2Q4NTVkMTY0NmNlOWJjOWI4MTVlNDg5YmZlZFwiLFwidXJsX2lkc1wiOltcIjdlZDBiMDZjOGYwMjUwMGZlN2NiMzNhOTE4MDljNDJlYzE0NDBkNmFcIl19In0> 
+ 
+ Something not correct? Contact Curve Support!
+<mailto:support@imaginecurve.com?subject=Receipt Help: Curve Receipt:
+Purchase at Amznmktplace on 06 August 2019 for €11.25>     *MasterCard is
+a registered trademark of MasterCard International Incorporated. The card
+is issued by Wirecard Card Solutions Ltd (WDCS) pursuant to license by
+MasterCard International Inc. WDCS is authorised by the Financial Conduct
+Authority to conduct electronic money service activities under the
+Electronic Money Regulations 2011 (Ref: 900051)*
+
+
+
+
+
+This email was sent to mmartynas@gmail.com (mailto:mmartynas@gmail.com)
+unsubscribe from this list (http://mandrill.imaginecurve.com/track/unsub.php?u=30621710&id=3ed9cd855d1646ce9bc9b815e489bfed.TIq4ONaeg%2BhiO59G%2B9CQ2d5FSbY%3D&r=https%3A%2F%2Fmandrillapp.com%2Funsub%3Fmd_email%3Dmmartynas%2540gmail.com)
+
