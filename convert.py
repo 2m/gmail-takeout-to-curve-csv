@@ -10,21 +10,39 @@ import re
 from email.header import decode_header
 
 patterns = [
-    re.compile(r'[\s\S]+You\smade\sa\spurchase\sat:[\s\S]*\d\d:\d\d[\s]*(.+)On\sthis\scard[\s\S]*bank\sstatement\sas:([\s\S]+)Generated\son\s([\s\S]+)==[\s]+Share'), # has share statement at the end
-    re.compile(r'[\s\S]+You\smade\sa\spurchase\sat:[\s\S]*\d\d:\d\d(?:\sUTC)?([\s\S]+)On\sthis\scard[\s\S]*bank\sstatement\sas:([\s\S]+)Something[\s\S]+Generated\son\s([\s\S]+?)<'), # no share statement at the end
-    re.compile(r'[\s\S]+You\smade\sa\spurchase\sat:[\s\S]*\d\d:\d\d[\s]*(.+)On\sthis\scard[\s\S]*bank\sstatement\sas:([\s\S]+)Generated\son\s([\s\S]+?)<') # has share statement at the end
+    # has share statement at the end
+    re.compile(r"""[\s\S]+You\smade\sa\spurchase\sat:
+                   [\s\S]*\d\d:\d\d[\s]*(.+)
+                   On\sthis\scard[\s\S]*
+                   bank\sstatement\sas:([\s\S]+)
+                   Generated\son\s([\s\S]+)
+                   ==[\s]+Share""", re.VERBOSE),
+    # no share statement at the end
+    re.compile(r"""[\s\S]+You\smade\sa\spurchase\sat:
+                   [\s\S]*\d\d:\d\d(?:\sUTC)?([\s\S]+)
+                   On\sthis\scard[\s\S]*
+                   bank\sstatement\sas:([\s\S]+)
+                   Something[\s\S]+
+                   Generated\son\s([\s\S]+?)<""", re.VERBOSE),
+    # no share statement and no 'something'
+    re.compile(r"""[\s\S]+You\smade\sa\spurchase\sat:
+                   [\s\S]*\d\d:\d\d[\s]*(.+)
+                   On\sthis\scard[\s\S]*
+                   bank\sstatement\sas:([\s\S]+)
+                   Generated\son\s([\s\S]+?)<""", re.VERBOSE)
 ]
 
 date_format = "%d %B %Y %H:%M UTC"
+
 
 def parse_body(content):
     match = None
     for pattern in patterns:
         match = pattern.match(content)
-        if match != None:
+        if match is not None:
             break
 
-    if match != None:
+    if match is not None:
         foreign = match.group(1).strip()
         message = match.group(2).strip()
         datetime_str = match.group(3).strip()
@@ -35,6 +53,7 @@ def parse_body(content):
     else:
         return None
 
+
 def write_csv(input):
 
     pathlib.Path("target").mkdir(exist_ok=True)
@@ -42,23 +61,25 @@ def write_csv(input):
 
     for message in mailbox.mbox(input):
         if message.is_multipart():
-            content = ''.join(part.get_payload(decode=True).decode("utf8") for part in message.get_payload() if part.get_content_type() == 'text/plain')
+            plain_parts = [part for part in message.get_payload() if part.get_content_type() == 'text/plain']
+            content = ''.join(part.get_payload(decode=True).decode("utf8") for part in plain_parts)
         else:
             content = message.get_payload(decode=True)
 
         parsed = parse_body(content)
-        if parsed != None:
+        if parsed is not None:
             subject = message['subject']
             decoded = decode_header(subject)[0][0]
             try:
                 decoded_str = decoded.decode("utf8")
-            except:
-                pass # fine if it is already str
+            except Exception:
+                # fine if it is already str
+                pass
             amount = decoded_str.split(" for ")[-1].strip("€")
             (foreign, message, dt) = parsed
 
             key = datetime.strftime(dt, "%Y-%m")
-            if transactions.get(key) == None:
+            if transactions.get(key) is None:
                 transactions[key] = []
 
             transactions[key].append((dt, message, amount))
@@ -73,10 +94,12 @@ def write_csv(input):
         for row in trans:
             writer.writerow(row)
 
+
 def parse_arguments():
     parser = argparse.ArgumentParser()
     parser.add_argument('--input', help='Input MBOX file')
     return parser.parse_args()
+
 
 if __name__ == '__main__':
     args = parse_arguments()
