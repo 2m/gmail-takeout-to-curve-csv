@@ -1,6 +1,6 @@
 ## Gmail Takeout Curve emails to CSV
 
-This tool reads MBOX files from [Google Takout](https://takeout.google.com/settings/takeout), parses [Curve](https://www.curve.app/en/join#ZEJZ226D) transaction emails and outputs CSV files which then can be imported to budget tracking apps, like [Lunch Money](https://lunchmoney.cc/).
+This tool reads MBOX files from [Google Takout](https://takeout.google.com/settings/takeout), parses [Curve](https://www.curve.app/en/join#ZEJZ226D) (<- contains referral code) transaction emails and outputs CSV files which then can be imported to budget tracking apps, like [Lunch Money](https://lunchmoney.cc/).
 
 ## Usage
 
