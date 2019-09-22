@@ -1,8 +1,9 @@
 import unittest
 from convert import parse_body
 
+
 class TestConvert(unittest.TestCase):
-    
+
     def test_with_share(self):
         with open("test/body_with_share.txt", "r") as f:
             content = f.read()
@@ -20,7 +21,7 @@ class TestConvert(unittest.TestCase):
             self.assertEqual(foreign, "")
             self.assertEqual(message, "Sviezios bandeles Vilnius LTU")
             self.assertEqual(datetime.isoformat(), "2019-05-29T05:25:00")
-    
+
     def test_no_utc_no_share(self):
         with open("test/body_no_utc_no_share.txt", "r") as f:
             content = f.read()
@@ -47,6 +48,7 @@ class TestConvert(unittest.TestCase):
             self.assertEqual(foreign, "")
             self.assertEqual(message, "FAIRTIQ Fribourg CHE")
             self.assertEqual(datetime.isoformat(), "2019-06-13T03:37:00")
+
 
 if __name__ == '__main__':
     unittest.main()
